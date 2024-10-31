@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App List</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Assignment: Simple To-Do List App
+
+    Objective:
+    Create a basic To-Do List app using HTML, CSS, and JavaScript with DOM manipulation.
+
+    Requirements:
+    HTML: Add an input field and an "Add Task" button.
+    CSS: Style the list to look clean and organized.
+    JavaScript:
+    Add tasks to the list when "Add Task" is clicked.
+    Include a "Remove" button next to each task to delete it.
+    Bonus (Optional):
+    Add a "Clear All" button to remove all tasks at once. -->
+
+    <!-- I want these things in my to do app. -->
+    <!-- 1.Dark Mode Toggle -->
+     
+    <div class="nav">
+        <h1>To-Do App List</h1>
+        <div>
+            <label>Select Mode: </label>
+            <select name="" id="mode">
+                <option value="light">Light mode</option>
+                <option value="dark">Dark mode</option>
+            </select>
+        </div>
+    </div>
+    <div class="main">
+      <div class="sub">
+        <input type="text" class="input-field" placeholder="Add your task..." id="get"><input type="button" class="input-button" value="Add" onclick="readData()">
+        <p id="task-added-here"><br></p>
+      </div>
+      
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
